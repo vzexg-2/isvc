@@ -3,7 +3,6 @@ ISVC stands for **Integrity System Verification Check**, it gather every single 
 
 it reads raw data from your phone like battery voltage, CPU temperature, and memory usage. Then it compares these numbers against what "engineers" consider normal ranges, the algorithm's assigns different importance levels to various measurements. Battery capacity matters more than temperature for overall battery health. Boot security features matter more than minor software issues for security scoring and then it combines all these individual assessments using weighted averages to create overall health scores
 
-```markdown
 # Algorithms used
 
 ## Battery Health Algorithm  
@@ -51,4 +50,3 @@ This is the algorithm giving the combination of all the subsystem scores:
 - Critical threshold detection using exponentially penalized curves  
 - Reliability index calculation using the principles of availability theory  
 - Predictive health modeling based on current trends analysis.
-```
