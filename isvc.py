@@ -12,6 +12,13 @@ from collections import defaultdict, deque
 import hashlib
 import statistics
 
+# wn:message
+print("""
+Permission Required:
+ADB
+""")
+
+# main
 class ISVC:
     def __init__(self):
         self.results = {}
@@ -2098,9 +2105,7 @@ class ISVC:
 if __name__ == "__main__":
     scanner = ISVC()
     try:
-        print("ISVC: Enhanced Integrity System Verified Check v2.0")
-        print("ISVC: Initializing comprehensive system analysis engine...")
-        
+        print("ISVC: Integrity System Verified Check")
         results = scanner.run_comprehensive_scan()
         
         print("\nISVC: Analysis execution summary:")
@@ -2114,7 +2119,7 @@ if __name__ == "__main__":
             else:
                 print(f"  ~ {analysis_name}: {type(analysis_data).__name__} data")
         
-        print(f"\nISVC: Comprehensive system verification completed successfully")
+        print(f"\nCompleted successfully")
         print(f"ISVC: Total execution time: {time.time() - scanner.start_time:.2f} seconds")
         print("=" * 80)
         
