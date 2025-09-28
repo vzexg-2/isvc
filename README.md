@@ -3,10 +3,12 @@ ISVC stands for **Integrity System Verification Check**, it gather every single 
 
 it reads raw data from your phone like battery voltage, CPU temperature, and memory usage. Then it compares these numbers against what "engineers" consider normal ranges, the algorithm's assigns different importance levels to various measurements. Battery capacity matters more than temperature for overall battery health. Boot security features matter more than minor software issues for security scoring and then it combines all these individual assessments using weighted averages to create overall health scores
 
+( Btw i know different phones have different like manufacturer specifications, i will add it later and probably will use a simple scraping system to scrape  information from Internet and will be used later, using keywords. )
+
 # Algorithms used
 
 ## Battery Health Algorithm  
-### NAME : "Power Degradation Analysis (PDA)"  
+### NAME : Power Degradation Analysis (PDA)
 
 This algorithm is based on a weighted multi-factor: 
 - Capacity Ratio Analysis: Ratio of current to design capacity (50% weight)  
@@ -19,7 +21,7 @@ The algorithm is able to "guess" scores because it is using established battery 
 ---
 
 ## Security Verify Algorithm  
-### Multi Vector Security Confidence (MVSC)  
+### NAME: Multi Vector Security Confidence (MVSC)  
 
 Uses total confidence scoring:  
 - Binary Detection (root binaries, system modifications)  
@@ -32,7 +34,7 @@ This is possible because of the traces security compromises leave in predictable
 ---
 
 ## Performance Health Algorithm
-### Dynamic System Load Assessment (DSLA)  
+### NAME: Dynamic System Load Assessment (DSLA)  
 
 Uses real-time utilization analysis of resources:  
 - Multicore CPU Utilization Over Time
@@ -43,7 +45,7 @@ Uses real-time utilization analysis of resources:
 ---
 
 ## General System Health Algorithm  
-### Composite System Reliability Index (CSRI)  
+### NAME: Composite System Reliability Index (CSRI)  
 
 This is the algorithm giving the combination of all the subsystem scores:  
 - Weighted average for 7 major system components  
